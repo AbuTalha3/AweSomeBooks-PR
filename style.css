@@ -3,3 +3,63 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#bookData {
+  background-color: rgb(243, 233, 252);
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 4px;
+}
+
+#bookForm {
+  display: grid;
+  position: relative;
+}
+
+#bookForm input {
+  background-color: rgb(228, 203, 252);
+  padding: 7px;
+  border: none;
+  outline: none;
+}
+
+#bookForm button {
+  position: absolute;
+  right: 0;
+  bottom: -1rem;
+  width: 25%;
+  /* border: none; */
+  padding: 5px;
+} 
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.book-lists {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px ;
+  align-items: center;
+}
+
+.book-lists button {
+  padding: 5px;
+}
+
+.container {
+  display: grid;
+  gap: 20px;
+  width: 300px;
+}
