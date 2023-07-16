@@ -72,21 +72,21 @@ h1 {
   outline: none;
 }
 
+.book-lists button {
+  padding: 5px;
+}
+
 #bookForm button {
   position: absolute;
   right: 0;
   bottom: -1rem;
   width: 25%;
   padding: 5px;
-} 
+}
 
 .book-lists {
   display: flex;
   justify-content: space-between;
-  margin: 0 15px ;
+  margin: 0 15px;
   align-items: center;
-}
-
-.book-lists button {
-  padding: 5px;
 }
