@@ -8,8 +8,48 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+header {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
   justify-content: center;
-  align-items: center;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  padding: 5px;
+}
+
+.container {
+  display: grid;
+  gap: 20px;
+  width: 300px;
+  margin: 20px auto;
+}
+
+main .content-section {
+  display: none;
+}
+
+main .content-section.active {
+  display: block;
+}
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
 #bookData {
@@ -37,15 +77,8 @@ body {
   right: 0;
   bottom: -1rem;
   width: 25%;
-  /* border: none; */
   padding: 5px;
 } 
-
-h1 {
-  margin-bottom: 15px;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-}
 
 .book-lists {
   display: flex;
@@ -56,10 +89,4 @@ h1 {
 
 .book-lists button {
   padding: 5px;
-}
-
-.container {
-  display: grid;
-  gap: 20px;
-  width: 300px;
 }

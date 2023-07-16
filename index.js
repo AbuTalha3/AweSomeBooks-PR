@@ -11,6 +11,14 @@ class BookManager {
     this.books = this.loadBooks();
     this.bookData = document.getElementById('bookData');
     this.bookForm = document.getElementById('bookForm');
+    this.booksLink = document.getElementById('booksLink');
+    this.addBookLink = document.getElementById('addBookLink');
+    this.contactLink = document.getElementById('contactLink');
+
+    this.booksLink.addEventListener('click', () => this.showSection('booksSection'));
+    this.addBookLink.addEventListener('click', () => this.showSection('addBookSection'));
+    this.contactLink.addEventListener('click', () => this.showSection('contactSection'));
+
     this.bookForm.addEventListener('submit', this.addBook.bind(this));
     this.displayBooks();
   }
@@ -29,7 +37,7 @@ class BookManager {
 
     this.books.forEach((book, index) => {
       const bookDiv = document.createElement('div');
-      bookDiv.classList.add('book-lists') 
+      bookDiv.classList.add('book-lists');
       bookDiv.textContent = `${book.title} by ${book.author}`;
 
       const removeBtn = document.createElement('button');
@@ -58,7 +66,7 @@ class BookManager {
 
     this.saveBooks();
     this.displayBooks();
-    // to clear the form once again after adding a book
+
     bookTitle.value = '';
     bookAuthor.value = '';
   }
@@ -68,6 +76,17 @@ class BookManager {
 
     this.saveBooks();
     this.displayBooks();
+  }
+
+  showSection(sectionId) {
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach((section) => {
+      if (section.id === sectionId) {
+        section.classList.add('active');
+      } else {
+        section.classList.remove('active');
+      }
+    });
   }
 }
 
