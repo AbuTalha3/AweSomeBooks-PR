@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>AweSomeBooks-PR</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" id="booksLink">Books List</a></li>
+        <li><a href="#" id="addBookLink">Add Book</a></li>
+        <li><a href="#" id="contactLink">Contact Info</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main>
+      <section id="booksSection" class="content-section">
+        <h1>Books List</h1>
+        <div id="bookData"></div>
+      </section>
+
+      <section id="addBookSection" class="content-section">
+        <h1>Add a new Book</h1>
+        <form id="bookForm">
+          <input type="text" id="bookTitle" placeholder="Write Book Title" required>
+          <br>
+          <input type="text" id="bookAuthor" placeholder="Write Author Name" required>
+          <br>
+          <button type="submit">Add Book</button>
+        </form>
+      </section>
+
+      <section id="contactSection" class="content-section">
+        <h1>Contact information</h1>
+        <p>Contact us for more information.</p>
+        <br>
+        <ul class="rung">
+          <li>Email: Abutalha-1122@gmail.com</li>
+          <li>Phone: +92(0)512-2334455</li>
+          <li>Address: 82 Sales Point Islamabad. Pakistan.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
